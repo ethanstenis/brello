@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
+
 Route::resource('lanes', 'LanesController', [
 'except' => ['create', 'edit']
 ]);
@@ -28,7 +28,7 @@ Route::resource('tasks', 'TasksController', [
 'except' => ['create', 'edit']
 ]);
 
-*/
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -42,16 +42,6 @@ Route::resource('tasks', 'TasksController', [
 
 Route::group(['middleware' => ['web']], function () {
     
-    Route::resource('lanes', 'LanesController', [
-	'except' => ['create', 'edit']
-	]);
 
-	Route::resource('tags', 'TagsController', [
-	'except' => ['create', 'edit']
-	]);
-
-	Route::resource('tasks', 'TasksController', [
-	'except' => ['create', 'edit']
-	]);
 
 });
